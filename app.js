@@ -1,4 +1,4 @@
-require('dotenv').load();
+// require('dotenv').load();
 
 const PORT = process.env.PORT || 3000;
 
@@ -33,7 +33,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/users', users);
-app.use('/api/S3', require('./routes/s3'));
+// app.use('/api/S3', require('./routes/s3'));
 app.use('/api', require('./routes/api'));
 app.use('/', routes);
 
