@@ -1,0 +1,24 @@
+<!-- <img ng-src="https://avatars.slack-edge.com/2015-10-26/13273420229_f4c6c019a05e6e880054_512.jpg" alt="Image" /> -->
+<br />
+
+<form class="ui form" ng-submit='detectImage()'>
+  <div class="field">
+    <label>Image Url</label>
+    <input type="text" ng-model="url" ng-data="url">
+  </div>
+  <button class="ui button">Submit</button>
+</form>
+
+<div class="ui card">
+  <div class="image">
+    <img src="https://avatars.slack-edge.com/2015-10-26/13273420229_f4c6c019a05e6e880054_512.jpg">
+  </div>
+  <div class="content">
+
+    top: <input type="text" ng-model="faceRectangle.top"> <br />
+    left: <input type="text" ng-model="faceRectangle.left"> <br />
+    width: <input type="text" ng-model="faceRectangle.width"> <br />
+    height: <input type="text" ng-model="faceRectangle.height">
+
+  </div>
+</div>
